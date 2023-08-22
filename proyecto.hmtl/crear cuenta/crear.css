@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.529),rgba(255, 255, 255, 0.496)), url(../foto/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    min-height: 50px;
+    background-color: rgb(7, 146, 192);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo h1{
+    position: absolute;
+    top: -1%;
+    left: 44%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+.nav-link{
+    color: black;
+    position: relative;
+    top: 10px;
+}
+
+.formulario{
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.493), rgba(255, 255, 255, 0.539)), url(../foto/Imagen\ 2.jpg);
+    background-size: cover;
+    border-radius: 30px;
+    border: 2px solid;
+}
+.formulario h2 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.formulario .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.username span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: black;
+    transition: .5s;
+}
+.username input:focus ~ label,
+.username input:focus ~ label{
+    top: -5px;
+    color: black;
+}
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+    width: 100%;
+}
+
+input[type="submit"]{
+    margin-top: 25px;
+    width: 100%;
+    height: 50px;
+    border: 2px solid;
+    background: #065fb9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: rgb(8, 0, 8);
+    transition: .3s;
+}
+.registrarse{
+    margin: 30px 0;text-align: center;
+    font-size: 16px;
+}
+.registrarse a{
+    margin: 30px 0;text-align: center;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.registrarse a:hover{
+    text-decoration: underline;
+}
